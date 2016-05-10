@@ -1,0 +1,206 @@
+<style>
+    .clearfix:after {
+        content: " "; /* Older browser do not support empty content */
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    * {
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+    }
+    img {display: block;}
+    .color-white {color: #ffffff;}
+    .color-blue {color: #3366cc;}
+    .color-gray {color: #666666;}
+    .color-dk-gray {color: #333333;}
+    .section-title {
+        font-size: 66px;
+        font-weight: 600;
+    }
+    .sub {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 100;
+    }
+    .std {
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+    .rt {float: right;}
+    .lt {float: left;}
+    .shop-btn {
+        font-size: 28px;
+        font-weight: 100;
+        line-height: 50px;
+        border: 2px solid;
+        border-radius: 9px;
+        width: 200px;
+        text-align: center;
+    }
+    .shop-btn.color-gray {border-color: #666666;}
+    .shop-btn.color-dk-gray {border-color: #333333;}
+    .shop-btn.color-white {border-color: #ffffff;}
+
+    /***************************/
+    /* INTRO */
+    /***************************/
+    .intro {
+        background: url('https://lifetrakusa.com/wp-content/uploads/S1_A.png') 118px center no-repeat #fafafa;
+        background-size: contain;
+    }
+    .intro .copy-wrap {
+        width: 485px;
+        padding: 55px 60px 70px 0;
+    }
+    .intro .copy-wrap img {margin: 0 0 20px 0;}
+    .intro .shop-btn {
+        margin: 20px 0 0 0;
+    }
+
+    /***************************/
+    /* HRV */
+    /***************************/
+    .hrv {
+        background-color: #3366cc;
+    }
+    .hrv img {
+        width: 343px;
+        margin: auto;
+    }
+    .hrv .copy-wrap {
+        text-align: center;
+        padding: 60px 0 50px 0;
+    }
+    .hrv .shop-btn {
+        margin: 50px auto 0;
+    }
+    /***************************/
+    /* TRACK */
+    /***************************/  
+    .track .copy-wrap{
+        padding-top: 80px;
+    }
+    .V-Score-img {
+        position: relative;
+        z-index: -1;
+        float: right;
+        top: -283px;
+    }
+    .V-Score-text{
+        text-align: right;
+    }
+    .V-Score-text div:first-child{
+        font-size: 47pt;
+        color: #666666;
+    }
+    .V-Score-text{
+        margin-top: 80px
+    }
+    .V-Scan-img{
+        position: relative;
+        top: -500px;
+        z-index: -2;
+        float: left;
+    }
+    .V-Scan-text{
+        font-size: 47pt;
+        color: #666666;
+
+    }
+    /***************************/
+    /* PERFORMANCE */
+    /***************************/
+    .performance{
+        background: url('https://lifetrakusa.com/wp-content/uploads/S5_A.png'); 
+        background-size: cover;
+    }
+    .performance .copy-wrap{
+        width: 540px;
+        padding: 55px 60px 70px 0;
+    }
+    .performance .sub{
+        font-weight: 400;
+    }
+    .performance .shop-btn{
+        margin-top: 50px;
+    }
+</style>
+
+<div id="lifetrak-zoom">
+    <div class="intro section clearfix">
+        <div class="copy-wrap rt">
+            <div>
+                <h1 class="section-title color-blue">Introducing</h1>
+            </div>
+            <div>
+                <img src="https://lifetrakusa.com/wp-content/uploads/S1_B.png" />
+            </div>
+            <div class="sub color-gray">A fitness tracker that has your heart down to a science</div>
+            <article class="std color-gray">
+                With the push of a button, learn what your heart rate variability (HRV) is telling you<br />
+                Zoom translates this data into information you can use to train more effectively.
+            </article>
+            <div class="shop-btn color-gray">Shop Now</div>
+        </div>
+    </div>
+
+    <div class="hrv section color-white clearfix">
+        <div class="copy-wrap">
+            <div>
+                <img src="https://lifetrakusa.com/wp-content/uploads/S2_A.png" />
+            </div>
+            <div>
+                <h1 class="section-title">What is HRV?</h1>
+            </div>
+            <div class="sub">And why you need to know</div>
+            <article class="std">
+                HRV is the variation in intervals between heartbeats. Use your HRV data to train better.<br />
+                You’ll know when your body is ready to push harder and when it needs to recover.
+            </article>
+            <div class="shop-btn color-white">Learn More</div>
+        </div>
+    </div>
+
+    <div class="track section color-gray clearfix">
+        <div class="copy-wrap clearfix">
+                <div>
+                    <h1 class="section-title">Track Your Stats</h1>
+                </div>
+                <div class="sub">The full picture</div>
+                <article class="std">
+                    24/7, Zoom is measuring key indicators of your fitness level.<br />
+                    V Score and V Scan help you harness this data:
+                </article>
+            <!-- Mike -->
+            <div class="V-Score-img">
+                <img src="https://lifetrakusa.com/wp-content/uploads/S3_A.png" alt="V-Score">
+            </div>
+            <div class="V-Score-text">
+                <div>V Score&#58</div> 
+                <div class="std">Your overall fitness level<br>in a single number<br>Know it. Grow it.</div>
+            </div>
+            <div class="V-Scan-img">
+                <img src="https://lifetrakusa.com/wp-content/uploads/S3_B.png" alt="V-Scan">
+            </div>
+            <div class="V-Scan-text">
+                <div>V Scan&#58</div>
+                <div class="std">Your on&#45demand power meter.<br>An immediate measure of your <br>current condition.</div>
+                <div class="shop-btn">Shop Now</div> 
+            </div>          
+        </div>
+    </div>
+    
+    <div class="performance section clearfix">
+        <div class="copy-wrap rt">
+            <div>
+                <h1 class="section-title">Are You Ready for Peak Performance?</h1>
+            </div> 
+            <div class="sub">Data that makes a difference</div>
+            <article class="std">If your're into counting steps, buy an activity tracker. Zoom is an advanced, biometric device for serious athletes who want to train smarter. It continuously tracks crucial heart rate data so you can learn how to push your limits</article>
+            <div class="shop-btn color-gray">Shop Now</div>   
+        </div>
+    </div>
+</div>
