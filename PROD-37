@@ -23,6 +23,7 @@
         line-height: 40px;
         font-weight: 100;
     }
+    .blurb,
     .std {
         font-size: 22px;
         line-height: 33px;
@@ -79,54 +80,76 @@
     }
     /***************************/
     /* TRACK */
-    /***************************/  
+    /***************************/
     .track .copy-wrap{
         padding-top: 80px;
     }
-    .V-Score-img {
-        position: relative;
-        z-index: -1;
-        float: right;
-        top: -283px;
-    }
-    .V-Score-text{
-        text-align: right;
-    }
+    /*.V-Score-img {*/
+        /*position: relative;*/
+        /*z-index: -1;*/
+        /*float: right;*/
+        /*top: -283px;*/
+    /*}*/
+    /*.V-Score-text{*/
+        /*text-align: right;*/
+    /*}*/
     .V-Score-text div:first-child{
         font-size: 47pt;
         color: #666666;
     }
-    .V-Score-text{
-        margin-top: 80px
+    .V-Score-text {
+        padding-right: 450px;
+        text-align: right;
+        margin-bottom: 500px
     }
-    .V-Scan-img{
+    /*.V-Scan-img{*/
+        /*position: relative;*/
+        /*top: -500px;*/
+        /*z-index: -2;*/
+        /*float: left;*/
+    /*}*/
+    .track.section {
         position: relative;
-        top: -500px;
-        z-index: -2;
-        float: left;
     }
+    .V-Score-img,
+    .V-Scan-img {
+        position: absolute;
+    }
+    .V-Score-img {
+        z-index: -1;
+        top: 0;
+        right: 0;
+    }
+    .V-Scan-img {
+        z-index: -2;
+        top: 635px;
+        left: 0;
+    }
+    .V-Score .sub-wrap {
+        margin-bottom: 80px;
+        padding-right: 400px;
+    }
+    /*.V-Scan-img {*/
+        /*float: left;*/
+    /*}*/
     .V-Scan-text{
         font-size: 47pt;
         color: #666666;
-
+        margin-bottom: 208px;
+        padding-left: 510px;
     }
     /***************************/
     /* PERFORMANCE */
     /***************************/
     .performance{
-        background: url('https://lifetrakusa.com/wp-content/uploads/S5_A.png'); 
+        background: url('https://lifetrakusa.com/wp-content/uploads/S5_A.png');
         background-size: cover;
     }
     .performance .copy-wrap{
-        width: 540px;
+        width: 485px;
         padding: 55px 60px 70px 0;
     }
-    .performance .sub{
-        font-weight: 400;
-    }
-    .performance .shop-btn{
-        margin-top: 50px;
-    }
+
 </style>
 
 <div id="lifetrak-zoom">
@@ -166,41 +189,46 @@
 
     <div class="track section color-gray clearfix">
         <div class="copy-wrap clearfix">
-                <div>
-                    <h1 class="section-title">Track Your Stats</h1>
+            <div class="V-Score">
+                <div class="sub-wrap">
+                    <div>
+                        <h1 class="section-title">Track Your Stats</h1>
+                    </div>
+                    <div class="V-Score sub">The full picture</div>
+                    <article class="std">
+                        24/7, Zoom is measuring key indicators of your fitness level. V Score and V Scan help you harness this data:
+                    </article>
                 </div>
-                <div class="sub">The full picture</div>
-                <article class="std">
-                    24/7, Zoom is measuring key indicators of your fitness level.<br />
-                    V Score and V Scan help you harness this data:
-                </article>
-            <!-- Mike -->
-            <div class="V-Score-img">
-                <img src="https://lifetrakusa.com/wp-content/uploads/S3_A.png" alt="V-Score">
+                <!-- Mike -->
+                <div class="V-Score-img">
+                    <img src="https://lifetrakusa.com/wp-content/uploads/S3_A.png" alt="V-Score" />
+                </div>
+                <div class="V-Score-text">
+                    <div>V Score&#58</div>
+                    <div class="V-Scan std">Your overall fitness level in a single number Know it. Grow it.</div>
+                </div>
             </div>
-            <div class="V-Score-text">
-                <div>V Score&#58</div> 
-                <div class="std">Your overall fitness level<br>in a single number<br>Know it. Grow it.</div>
+            <div class="V-Scan">
+                <div class="V-Scan-img">
+                    <img src="https://lifetrakusa.com/wp-content/uploads/S3_B.png" alt="V-Scan" />
+                </div>
+                <div class="V-Scan-text">
+                    <div>V Scan</div>
+                    <div class="V-Scan blurb">Your on&#45demand power meter. An immediate measure of your current condition.</div>
+                    <div class="shop-btn">Shop Now</div>
+                </div>
             </div>
-            <div class="V-Scan-img">
-                <img src="https://lifetrakusa.com/wp-content/uploads/S3_B.png" alt="V-Scan">
-            </div>
-            <div class="V-Scan-text">
-                <div>V Scan&#58</div>
-                <div class="std">Your on&#45demand power meter.<br>An immediate measure of your <br>current condition.</div>
-                <div class="shop-btn">Shop Now</div> 
-            </div>          
         </div>
     </div>
-    
+
     <div class="performance section clearfix">
         <div class="copy-wrap rt">
             <div>
                 <h1 class="section-title">Are You Ready for Peak Performance?</h1>
-            </div> 
+            </div>
             <div class="sub">Data that makes a difference</div>
             <article class="std">If your're into counting steps, buy an activity tracker. Zoom is an advanced, biometric device for serious athletes who want to train smarter. It continuously tracks crucial heart rate data so you can learn how to push your limits</article>
-            <div class="shop-btn color-gray">Shop Now</div>   
+            <div class="shop-btn color-gray">Shop Now</div>
         </div>
     </div>
 </div>
