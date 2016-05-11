@@ -84,15 +84,6 @@
     .track .copy-wrap{
         padding-top: 80px;
     }
-    /*.V-Score-img {*/
-        /*position: relative;*/
-        /*z-index: -1;*/
-        /*float: right;*/
-        /*top: -283px;*/
-    /*}*/
-    /*.V-Score-text{*/
-        /*text-align: right;*/
-    /*}*/
     .V-Score-text div:first-child{
         font-size: 47pt;
         color: #666666;
@@ -102,12 +93,7 @@
         text-align: right;
         margin-bottom: 500px
     }
-    /*.V-Scan-img{*/
-        /*position: relative;*/
-        /*top: -500px;*/
-        /*z-index: -2;*/
-        /*float: left;*/
-    /*}*/
+
     .track.section {
         position: relative;
     }
@@ -129,14 +115,24 @@
         margin-bottom: 80px;
         padding-right: 400px;
     }
-    /*.V-Scan-img {*/
-        /*float: left;*/
-    /*}*/
+    .V-Score.std{
+        padding-left: 184px;
+        font-size: 37px;
+        line-height: 40px;
+    }
     .V-Scan-text{
         font-size: 47pt;
         color: #666666;
-        margin-bottom: 208px;
-        padding-left: 510px;
+        margin-bottom: 64px;
+        padding-left: 524px;
+    }
+    .V-Scan-text .shop-btn{
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .V-Scan.blurb{
+        font-size: 37px;
+        line-height: 40px;       
     }
     /***************************/
     /* PERFORMANCE */
@@ -146,10 +142,86 @@
         background-size: cover;
     }
     .performance .copy-wrap{
-        width: 485px;
+        width: 550px;
         padding: 55px 60px 70px 0;
     }
-
+    .performance .copy-wrap .sub{
+        font-weight: 400;
+    }
+    .performance .shop-btn{
+        margin-top: 77px;
+    }
+    .performance .section-title{
+        color: #3366cc;
+    }
+    /***************************/
+    /* SCIENCE */
+    /***************************/
+    .science{
+        background: url("https://lifetrakusa.com/wp-content/uploads/S6_A.png") right no-repeat;
+        background-size: contain;
+    }
+    .science .copy-wrap{
+        width: 619px;
+        padding: 152px 60px 150px 51px;
+    }
+    .science .shop-btn{
+        margin: 20px 0 0 0;
+    }
+    /***************************/
+    /* ANALYZER */
+    /***************************/
+    .analyzer{
+        background: url('https://lifetrakusa.com/wp-content/uploads/S7_A.png');
+        background-size: cover;
+    }
+    .analyzer .copy-wrap{
+        width: 500px;
+        padding: 134px 60px 112px 0;       
+    }
+    .analyzer .shop-btn{
+        margin-top: 20px
+    }
+    .analyzer .section-title{
+        color: #3366cc;
+    }
+    /***************************/
+    /* METRICS */
+    /***************************/
+    .metrics{
+        background: url("https://lifetrakusa.com/wp-content/uploads/S8_A.png");
+        background-size: cover;
+    }
+    .metrics .copy-wrap{
+        width: 545px;
+        padding: 100px 60px 100px 56px;
+        color: #fff;
+    }
+    .metrics .shop-btn{
+        border-color: #fff;
+        color: #fff;
+        margin-top: 20px;
+    }
+    /***************************/
+    /* BELTS*/
+    /***************************/
+    .belt .copy-wrap{
+        padding: 50px 50px 0px 50px;
+        text-align: center;
+    }
+    .belt .std{
+        padding: 0 26px;
+    }
+    .belt .shop-btn{
+        margin: 0 auto;
+        margin-top: 25px
+    }
+    .belt img{
+        margin: 0 auto;
+    }
+    .belt .section-title{
+        color: #3366cc;
+    }
 </style>
 
 <div id="lifetrak-zoom">
@@ -205,7 +277,7 @@
                 </div>
                 <div class="V-Score-text">
                     <div>V Score&#58</div>
-                    <div class="V-Scan std">Your overall fitness level in a single number Know it. Grow it.</div>
+                    <div class="V-Score std">Your overall fitness level in a single number. Know it. Grow it.</div>
                 </div>
             </div>
             <div class="V-Scan">
@@ -224,11 +296,66 @@
     <div class="performance section clearfix">
         <div class="copy-wrap rt">
             <div>
-                <h1 class="section-title">Are You Ready for Peak Performance?</h1>
+                <h1 class="section-title">Are You<br/> Ready for Peak Performance?</h1>
             </div>
             <div class="sub">Data that makes a difference</div>
             <article class="std">If your're into counting steps, buy an activity tracker. Zoom is an advanced, biometric device for serious athletes who want to train smarter. It continuously tracks crucial heart rate data so you can learn how to push your limits</article>
-            <div class="shop-btn color-gray">Shop Now</div>
+            <div class="shop-btn color-dk-gray">Shop Now</div>
         </div>
+    </div>
+
+    <div class="science section clearfix">
+        <div class="copy-wrap">
+            <div>
+                <h1 class="section-title">Proven Science, Real Results</h1>
+            </div>
+            <div class="sub">No guessing games</div>
+            <article class="std">
+                Zoom provides science-backed data for precise and accerate fitness tracking.
+            </article> 
+            <div class="shop-btn color-gray">Shop Now</div>                
+        </div>
+    </div>
+
+    <div class="analyzer section clearfix">
+        <div class="copy-wrap rt">
+            <div>
+                <h1 class="section-title">A Real-Time Recovery Analyzer</h1>
+            </div>
+            <div class="sub">Your body in balance</div>
+            <article class="std">
+                Zoom shows you, instantly and accurately, how well you recovered. Use this information to guide the intensity of your next workout.
+            </article> 
+            <div class="shop-btn color-dk-gray">Shop Now</div>              
+        </div>
+    </div>
+
+    <div class="metrics section clearfix">
+        <div class="copy-wrap lt">
+            <div>
+                <h1 class="section-title">Metrics<br/> That Matter</h1>
+            </div>
+            <div class="sub">From wrist to device</div>
+            <article class="std">
+                Zoom syncs with compatible devices, making it a cinch to monitor your HRV, track the data over time and your performance.
+            </article> 
+            <div class="shop-btn color-gray">Learn More</div>           
+        </div>
+    </div>
+
+    <div class="belt section clearfix">
+        <div class="copy-wrap">
+            <div>
+                <h1 class="section-title">Goodbye Bulky Chest Belts</h1>
+            </div>
+            <div class="sub">It's all in the wrist</div>
+            <article class="std">
+                Zoom instantly and accurately detects your heart rate and tracks every beat continuously, streaming all data to your device.
+            </article> 
+            <div class="shop-btn color-gray">Shop Now</div>
+            <div>
+                <img src="https://lifetrakusa.com/wp-content/uploads/S9_A.png" alt="">
+            </div>              
+        </div> 
     </div>
 </div>
