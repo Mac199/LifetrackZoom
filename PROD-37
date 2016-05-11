@@ -76,7 +76,7 @@
         padding: 60px 0 50px 0;
     }
     .hrv .shop-btn {
-        margin: 50px auto 0;
+        margin: 20px auto 0;
     }
     /***************************/
     /* TRACK */
@@ -123,12 +123,12 @@
     .V-Scan-text{
         font-size: 47pt;
         color: #666666;
-        margin-bottom: 64px;
+        margin-bottom: 84px;
         padding-left: 524px;
     }
     .V-Scan-text .shop-btn{
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .V-Scan.blurb{
         font-size: 37px;
@@ -138,18 +138,16 @@
     /* PERFORMANCE */
     /***************************/
     .performance{
-        background: url('https://lifetrakusa.com/wp-content/uploads/S5_A.png');
+        background: url('https://lifetrakusa.com/wp-content/uploads/S5_A_New-2.jpg');
         background-size: cover;
     }
     .performance .copy-wrap{
         width: 550px;
         padding: 55px 60px 70px 0;
     }
-    .performance .copy-wrap .sub{
-        font-weight: 400;
-    }
+
     .performance .shop-btn{
-        margin-top: 77px;
+        margin-top: 20px;
     }
     .performance .section-title{
         color: #3366cc;
@@ -214,7 +212,7 @@
     }
     .belt .shop-btn{
         margin: 0 auto;
-        margin-top: 25px
+        margin-top: 20px
     }
     .belt img{
         margin: 0 auto;

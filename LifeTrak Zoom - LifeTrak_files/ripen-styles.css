@@ -1,0 +1,28 @@
+/* CUSTOM PROMOTIONAL POPUP STYLE OVERRIDES */
+#cboxOverlay {opacity: 0.4 !important;}
+#cboxContent,
+#cboxTopLeft,
+#cboxTopCenter,
+#cboxTopRight,
+#cboxMiddleLeft,
+#cboxMiddleRight,
+#cboxBottomLeft,
+#cboxBottomCenter,
+#cboxBottomRight {background: none !important;}
+#cboxTopLeft {border-top-left-radius: 14px !important;}
+#cboxTopRight {border-top-right-radius: 14px !important;}
+#cboxBottomLeft {border-bottom-left-radius: 14px !important;}
+#cboxBottomRight {border-bottom-right-radius: 14px !important;}
+#cboxBottomLeft,
+#cboxBottomRight,
+#cboxBottomCenter {height: 14px !important;}
+#colorbox,
+#cboxWrapper {overflow: visible !important;}
+#cboxClose {
+   background: url(//assets.zendesk.com/external/zenbox/images/close_big.png) !important; 
+   bottom: auto !important; 
+   top: -22px !important; 
+   height: 46px !important; 
+   width: 46px !important;
+   right: -22px !important;
+}
