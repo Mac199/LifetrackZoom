@@ -1,4 +1,7 @@
 <style>
+    #lifetrak-zoom{
+        min-width: 290px;
+    }
     .clearfix:after {
         content: " "; /* Older browser do not support empty content */
         visibility: hidden;
@@ -44,13 +47,13 @@
     .shop-btn.color-gray {border-color: #666666;}
     .shop-btn.color-dk-gray {border-color: #333333;}
     .shop-btn.color-white {border-color: #ffffff;}
-
     /***************************/
     /* INTRO */
     /***************************/
     .intro {
         background: url('https://lifetrakusa.com/wp-content/uploads/S1_A.png') 118px center no-repeat #fafafa;
         background-size: contain;
+        background-color: #fafafa;
     }
     .intro .copy-wrap {
         width: 485px;
@@ -60,12 +63,14 @@
     .intro .shop-btn {
         margin: 20px 0 0 0;
     }
-
+    .intro-img{
+        display: none;
+    }
     /***************************/
     /* HRV */
     /***************************/
     .hrv {
-        background-color: #3366cc;
+        background-color: #116db6;
     }
     .hrv img {
         width: 343px;
@@ -73,7 +78,7 @@
     }
     .hrv .copy-wrap {
         text-align: center;
-        padding: 60px 0 50px 0;
+        padding: 60px 60px 50px 60px;
     }
     .hrv .shop-btn {
         margin: 20px auto 0;
@@ -81,8 +86,13 @@
     /***************************/
     /* TRACK */
     /***************************/
-    .track .copy-wrap{
-        padding-top: 80px;
+
+    .track .V-Score:first-child{
+      background: url('https://lifetrakusa.com/wp-content/uploads/S3_A.png') right no-repeat;
+      background-size: contain;
+      height: 770px;
+      padding-top: 60px;
+      z-index: -1;
     }
     .V-Score-text div:first-child{
         font-size: 47pt;
@@ -99,18 +109,9 @@
     }
     .V-Score-img,
     .V-Scan-img {
-        position: absolute;
+        display: none;
     }
-    .V-Score-img {
-        z-index: -1;
-        top: 0;
-        right: 0;
-    }
-    .V-Scan-img {
-        z-index: -2;
-        top: 635px;
-        left: 0;
-    }
+
     .V-Score .sub-wrap {
         margin-bottom: 80px;
         padding-right: 400px;
@@ -123,8 +124,13 @@
     .V-Scan-text{
         font-size: 47pt;
         color: #666666;
-        margin-bottom: 84px;
         padding-left: 524px;
+        padding-top: 310px;
+        margin-top: -230px;
+        z-index: 1;
+        height: 760px;
+        background: url('https://lifetrakusa.com/wp-content/uploads/S3_B.png') left no-repeat;
+        background-size: contain;
     }
     .V-Scan-text .shop-btn{
         margin: 0 auto;
@@ -160,11 +166,18 @@
         background-size: contain;
     }
     .science .copy-wrap{
-        width: 619px;
-        padding: 152px 60px 150px 51px;
+        width: 485px;
+        padding: 152px 0px 150px 60px;
+        float: left;
     }
     .science .shop-btn{
         margin: 20px 0 0 0;
+    }
+    .Science-img{
+        display: none;
+    }
+    .Science-img img{
+      width: 100%;
     }
     /***************************/
     /* ANALYZER */
@@ -211,14 +224,305 @@
         padding: 0 26px;
     }
     .belt .shop-btn{
-        margin: 0 auto;
-        margin-top: 20px
+        margin: 20px auto;
+       
     }
     .belt img{
         margin: 0 auto;
     }
     .belt .section-title{
         color: #3366cc;
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 992px){
+       .hrv .copy-wrap{
+          padding-left: 20px;
+          padding-right: 20px;
+       }
+       .intro{
+            background: url('');
+            background-color: #fafafa;
+       }
+       .intro-img{
+            display: block;
+       }
+       .intro .copy-wrap{
+            width: 70%;
+            padding: 40px 0 40px 0;
+            margin: 0 auto;
+            text-align: center;
+       }
+       .intro .copy-wrap img{
+            margin: 0 auto;
+            margin-bottom: 20px;
+       }
+       .intro .shop-btn{
+            margin: 20px auto;
+            margin-bottom: 0px;
+       }
+       .rt{
+        float: none;
+       }
+       .lt{
+        float: none;
+       }
+
+       .shop-btn{
+            margin: 20px auto;
+       }
+       /************ TRACK MEDIA ************/
+       .track .V-Score:first-child, .V-Scan-text{
+          background: url('');
+          height: auto;
+       }
+       .track .copy-wrap{
+          width: 70%;
+          margin:0 auto;
+          padding: 0 0 20px 0;
+          text-align: center;
+       }
+       .V-Score .sub-wrap{
+            margin-bottom: 0;
+            padding-right: 0;
+       }
+       .V-Score-img, .V-Scan-img{
+            display: block;
+       }
+       .V-Score-text{
+            padding-right: 0;
+            text-align: none;
+            margin-bottom: 0px;
+            margin-top: 6px;
+            text-align: center;
+       }
+
+       .V-Score.std{
+            padding-left: 0;
+
+       }
+       
+       .V-Scan-text{
+          /*  font-size: 27pt;*/
+            padding-left: 0;
+            padding-top: 0;
+            margin-top: 0;
+            height: auto;
+       }
+
+       .V-Scan-text .shop-btn{
+            margin: 0 auto;
+            margin-top: 29px;
+       }
+         /************ PERFORMANCE MEDIA *************/\
+       .performance .copy-wrap{
+          text-align: center;        
+       }
+       .performance{
+          background: url('https://lifetrakusa.com/wp-content/uploads/S5_Mobile-e1463084100127.jpg') no-repeat;
+       }
+       /************ SCIENCE MEDIA *************/
+      .science{
+        background: url('');
+      }
+      .science .copy-wrap{
+          width: 70%;
+          padding: 60px 0;
+          float: none;
+          margin: 0 auto;
+          text-align: center;
+      }
+      .Science-img{
+        display: block;
+        width: 100%;
+      }
+      .science .shop-btn{
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      /************ ANALYZER MEDIA *************/
+      .analyzer{
+          background: url('https://lifetrakusa.com/wp-content/uploads/S7_Mobile.jpg') center no-repeat;
+          background-size: cover;
+      }
+      .analyzer .copy-wrap{
+          width: 70%;
+          padding: 60px 0 770px 0;
+          margin: 0 auto;
+          text-align: center;
+      }
+      /************ METRICS MEDIA *************/
+      .metrics .copy-wrap{
+          width: 70%;
+          margin: 0 auto;
+          padding: 140px 0 130px 0;
+          text-align: center;
+      }
+
+    }
+      /************ PERFORMANCE MEDIA *************/
+    @media only screen and (min-width: 320px) and (max-width: 425px){
+ 
+   .performance {
+      background-size: cover;
+      background-position: -116px -15px;
+      min-height: 1070px
+   }
+   .performance .copy-wrap{
+        width: 70%;
+        padding: 60px 0px 0px 0px;
+        margin: 0 auto;
+   
+   }
+   .science .copy-wrap{
+        padding-top: 0;
+   }  
+   .analyzer .copy-wrap{
+        padding-bottom: 410px;
+   }
+}
+    @media only screen and (min-width: 426px) and (max-width: 768px){
+    .performance{
+      background-position: center -295px;
+      min-height: 1120px;
+    }
+    .performance .copy-wrap{
+      padding-left: 0;
+      padding-bottom: 0;
+      margin: 0 auto;
+      width: 70%;
+
+    }
+    .science .copy-wrap{
+      padding-top: 20px;
+    }
+    .analyzer .shop-btn{
+      margin-bottom: 0px;
+    }
+  }
+  @media only screen and (min-width: 642px) and (max-width: 680px){
+    .analyzer{
+        background-position: center -157px;
+    }
+    .analyzer .copy-wrap{
+        padding-bottom: 580px;
+    }
+  }
+  @media only screen and (min-width: 666px) and (max-width: 681px){
+    .analyzer{
+        background-position: center -271px;
+    }
+    .analyzer .copy-wrap{
+        padding-bottom: 582px;
+    }
+  }
+  @media only screen and (min-width: 682px) and (max-width: 712px){
+    .analyzer .copy-wrap{
+        padding-bottom: 550px;
+    }
+  }
+  @media only screen and (min-width: 713px) and (max-width: 768px){
+    .analyzer{
+        background-position: center -276px;
+    }
+    .analyzer .copy-wrap{
+        padding-bottom: 635px;
+    }
+  }   
+  @media only screen and (min-width: 769px) and (max-width: 992px){
+    .analyzer .copy-wrap{
+      padding-bottom: 620px;   
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 992px){
+    .performance{
+      background-position: center;
+      min-height: 1200px;
+    }
+    .performance .copy-wrap{
+      padding-left: 0;
+      padding-bottom: 0;
+      margin: 0 auto;
+      width: 70%;
+
+    }
+    .science .copy-wrap{
+      padding-top: 20px;
+    }
+  }
+
+    /************ FONT SIZE CHANGING ***************/
+    @media only screen and (min-width: 320px) and (max-width: 768px){
+       .navbar-brand{
+            display: block;
+            float: none;
+            margin: 0 auto;
+            width: 250px;
+       }
+       .V-Scan.blurb{
+            font-size: 17px;
+            line-height: 23px;
+       }
+       .V-Score-text div:first-child{
+            font-size: 27pt;
+       }
+       .V-Score.std{
+            font-size: 17px;
+            line-height: 23px;
+       }
+       
+       .V-Scan-text{
+            font-size: 27pt; 
+       }
+       .section-title{
+            font-size: 30px;
+       }
+       .sub{
+            font-size: 20px;
+            line-height: 27px;
+       }
+       .std{
+            font-size: 14px;
+            line-height: 19px;
+       }
+       .metrics{
+          background: url('https://lifetrakusa.com/wp-content/uploads/S8_A.png');
+       }
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+      /************ TRACK MEDIA *************/       
+       .V-Score .sub-wrap{
+          margin-bottom: 70px;
+       }
+       .intro{
+          background-position: 23px center;
+       }
+       .track .V-Score:first-child{
+          position: relative;
+          z-index: 2;
+       }
+       .V-Score-text div:first-child, .V-Scan-text div:first-child{
+          font-size: 37pt;
+       }
+       .V-Score.std, .V-Scan.blurb{
+          font-size: 27px;
+          line-height: 30px;
+       }
+      /************ PERFORMANCE *************/ 
+      .performance .copy-wrap{
+          padding-right: 0;
+          width: 520px;
+      }  
+      /************ SCIENCE *************/ 
+      .science .copy-wrap{
+          padding-bottom: 70px;
+          padding-left: 0;
+      }
+      /************ SCIENCE *************/ 
+      .analyzer .copy-wrap{
+          width: 400px;
+          padding-right: 0;
+      }
     }
 </style>
 
@@ -233,9 +537,12 @@
             </div>
             <div class="sub color-gray">A fitness tracker that has your heart down to a science</div>
             <article class="std color-gray">
-                With the push of a button, learn what your heart rate variability (HRV) is telling you<br />
+                With the push of a button, learn what your heart rate variability (HRV) is telling you.
                 Zoom translates this data into information you can use to train more effectively.
             </article>
+            <div class="intro-img">
+              <img src="https://lifetrakusa.com/wp-content/uploads/S1_A.png" alt="">
+            </div>
             <div class="shop-btn color-gray">Shop Now</div>
         </div>
     </div>
@@ -250,7 +557,7 @@
             </div>
             <div class="sub">And why you need to know</div>
             <article class="std">
-                HRV is the variation in intervals between heartbeats. Use your HRV data to train better.<br />
+                HRV is the variation in intervals between heartbeats. Use your HRV data to train better.
                 You’ll know when your body is ready to push harder and when it needs to recover.
             </article>
             <div class="shop-btn color-white">Learn More</div>
@@ -271,33 +578,34 @@
                 </div>
                 <!-- Mike -->
                 <div class="V-Score-img">
-                    <img src="https://lifetrakusa.com/wp-content/uploads/S3_A.png" alt="V-Score" />
+                    <img src="https://lifetrakusa.com/wp-content/uploads/S3_A_Mobile.jpg" alt="V-Score" />
                 </div>
                 <div class="V-Score-text">
                     <div>V Score&#58</div>
                     <div class="V-Score std">Your overall fitness level in a single number. Know it. Grow it.</div>
                 </div>
+
             </div>
-            <div class="V-Scan">
-                <div class="V-Scan-img">
-                    <img src="https://lifetrakusa.com/wp-content/uploads/S3_B.png" alt="V-Scan" />
-                </div>
+
+ 
                 <div class="V-Scan-text">
-                    <div>V Scan</div>
+                    <div class="V-Scan-img">
+                        <img src="https://lifetrakusa.com/wp-content/uploads/S3_B_Mobile.jpg" alt="V-Scan" />
+                    </div>
+                    <div>V Scan:</div>
                     <div class="V-Scan blurb">Your on&#45demand power meter. An immediate measure of your current condition.</div>
                     <div class="shop-btn">Shop Now</div>
                 </div>
             </div>
         </div>
-    </div>
 
     <div class="performance section clearfix">
         <div class="copy-wrap rt">
             <div>
-                <h1 class="section-title">Are You<br/> Ready for Peak Performance?</h1>
+                <h1 class="section-title">Are You Ready for Peak Performance?</h1>
             </div>
             <div class="sub">Data that makes a difference</div>
-            <article class="std">If your're into counting steps, buy an activity tracker. Zoom is an advanced, biometric device for serious athletes who want to train smarter. It continuously tracks crucial heart rate data so you can learn how to push your limits</article>
+            <article class="std">If your're into counting steps, buy an activity tracker. Zoom is an advanced, biometric device for serious athletes who want to train smarter. It continuously tracks crucial heart rate data so you can learn how to push your limits.</article>
             <div class="shop-btn color-dk-gray">Shop Now</div>
         </div>
     </div>
@@ -312,6 +620,9 @@
                 Zoom provides science-backed data for precise and accerate fitness tracking.
             </article> 
             <div class="shop-btn color-gray">Shop Now</div>                
+        </div>
+        <div class="Science-img">
+          <img src="https://lifetrakusa.com/wp-content/uploads/S6_A_Mobile-e1463057809428.jpg" alt="">
         </div>
     </div>
 
